@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Shopx</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="section section-header">
+        <div class="container">
+            <div class="search search-left">
+                <a class= "mgn_glass" href=""><img src="assets/Search.png" alt="search"></a>
+                <p class="search_name">Search</p>
+                <input type="text" class="search_box">
+            </div>
+
+            <img class="logo" src="assets/logo.png" alt="logo">
+            <ul class="activity">
+                <li><a href=""><img src="assets/User.png" alt="user"></a></li>
+                <li>
+                    <a id="cart-info"><img src="assets/Shop.png" alt="shop">
+                        <span id="item-count">0 </span>
+                    </a>
+                    
+                </li>
+                <li><a href=""><img src="assets/Nav.png" alt="navigation"></a></li>
+            </ul>
+
+
+            <!-- shopping cart -->
+            <div id="cart" class="cart">
+               
+                <!-- cart total -->
+          <div class="cart-total-container">
+            <h5>total</h5>
+            <h5> $ <strong id="cart-total" class="total">0.00</strong> </h5>
+          </div>
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container">
+            <a href="#" id="clear-cart" class="btn">clear</a>
+            <a href="#" class="btn">checkout</a>
+          </div>
+          <!--end of  cart buttons -->
+            </div>
+
+
+            <nav>
+                <ul class="main_nav">
+                    <li><a href="">home</a></li>
+                    <li><a href="">shop</a></li>
+                    <li><a href="">element</a></li>
+                    <li><a href="">pages</a></li>
+                    <li><a href="">portfolio</a></li>
+                    <li><a href="">blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section-slider">
+        <div class="container">
+            <div class="slides">
+                <span>New</span>
+                <h3>Arrivals</h3>
+                <h1 class="big_header">Sky Planter</h1>
+                <h5 class="price">$18.00</h5>
+                <a href="" class="shop_link">Shop now</a>
+            </div>
+            <div class="slides second">
+                <span>Cool</span>
+                <h3>Summer Ideas</h3>
+                <h1 class="big_header">Flowers</h1>
+                <h5 class="price">$14.00</h5>
+                <a href="" class="shop_link">Shop now</a>
+            </div>
+            <div class="slides third">
+                <span>Hot</span>
+                <h3>products</h3>
+                <h1 class="big_header">Outdoor Carpet</h1>
+                <h5 class="price">$180.00</h5>
+                <a href="" class="shop_link">Shop now</a>
+            </div>
+        </div>
+
+        <div class="slide_number">
+            <span class="num" onclick="currentSlide(1)">01</span> 
+            <span class="num" onclick="currentSlide(2)">02</span> 
+            <span class="num" onclick="currentSlide(3)">03</span> 
+        </div>
+    </section>
+
+    <section class="section section-main">
+        <div class="container">
+            <div class="section-head">
+                <img src="assets/Nav.png">
+                <ul class="products_nav">
+                    <li><a href="">all</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">learning</a></li>
+                    <li><a href="">office</a></li>
+                    <li><a href="">outdoor</a></li>
+                </ul>
+                <div class="search search-right">
+                    <a class= "mgn_glass" href=""><img src="assets/Search.png"></a>
+                    <p class="search_name">Search</p>
+                    <input type="text" class="search_box">
+                </div>
+            </div>
+
+            <div class="section-body">
+                <ul class="product_list">
+                        <li class="shopping_card">
+                            <div class="shopping_card">
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product">
+                                    <img>
+                                    <p class="message_new">New</p>
+                                </div>
+                                <div class="description">
+                                    <h5 class="name">Lava Vase</h5>
+                                    <span class="old_price">$66.00</span>
+                                    <p class="new_price">$35.90</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="shopping_card">
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product">
+                                    <img>
+                                    <p class="message_hot">Hot</p>
+                                </div>
+                                <div class="description">
+                                    <h5 class="name">Ceramic Pot</h5>
+                                    <span class="old_price">$78.00</span>
+                                    <p class="new_price">$45.00</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                        </li>
+                        <li class="shopping_card">
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product"></div>
+                                <div class="description">
+                                    <h5 class="name">Dinnerware Service</h5>
+                                    <span class="old_price">$89.00</span>
+                                    <p class="new_price">$56.00</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                        </li>
+                        <li class="shopping_card">
+                            <div >
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product"></div>
+                                <div class="description">
+                                    <h5 class="name">Norm Jars</h5>
+                                    <span class="old_price">$66.00</span>
+                                    <p class="new_price">$35.00</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                        </li>
+                        <li class="shopping_card">
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product"></div>
+                                <div class="description">
+                                    <h5 class="name">Floating Boat</h5>
+                                    <span class="old_price">$78.00</span>
+                                    <p class="new_price">$45.00</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                        </li>
+                        <li class="shopping_card">
+                                <ul class="item_nav">
+                                    <li><a href=""><img src="assets/Nav.png"></a></li>
+                                    <li><a href=""><img src="assets/Heart.png"></a></li>
+                                    <li><a href=""><img src="assets/Add.png"></a></li>
+                                </ul>
+                                <div class="product"></div>
+                                <div class="description">
+                                    <h5 class="name">Cermaic Pot</h5>
+                                    <span class="old_price">$89.00</span>
+                                    <p class="new_price">$56.00</p>
+                                    <span class="store-item"><img src="assets/Shop.png">Add to cart</span>
+                                </div>
+                        </li>     
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-exclusive">
+
+    </section>
+
+    <section class="section-features">
+        <ul class="features_list">
+            <li>
+                <img src="assets/Truck.png">
+                <h5>Faste Delivery</h5>
+                <p>Same day delivery as soon as possible</p>
+            </li>
+            <li>
+                <img src="assets/label.png">
+                <h5>Special Discount</h5>
+                <p>Get attarctive offers day by day</p>
+            </li>
+            <li>
+                <img src="assets/lock.png">
+                <h5>Secure Checkouts</h5>
+                <p>Fully secured SSL checkout technology</p>
+            </li>
+            <li>
+                <img src="assets/Money.png">
+                <h5>Money returns</h5>
+                <p>100% money back guarantee</p>
+            </li>
+        </ul>
+    </section>
+
+        <footer class="section section-footer">
+            <div class="container">
+                <div class="col col-left">
+                    <img src="assets/logo.png">
+                    <p>Watson Website Builder is a big library of pre-designed web elements which help you create website in few minutes</p>
+                    <a href="">Read more >></a>
+                    <p class="rights">All rights reserved.</p>
+                </div>
+                <div class="col col-center">
+                    <h4>Useful Links</h4>
+                    <ul class="useful_links">
+                        <li><a href="">>> Our Brands</a></li>
+                        <li><a href="">>> Special Offers</a></li>
+                        <li><a href="">>> Help Topics</a></li>
+                        <li><a href="">>> Delivery information</a></li>
+                        <li><a href="">>> Social Media</a></li>
+                        <li><a href="">>> Gift Vouchers</a></li>
+                        <li><a href="">>> Latest Jobs</a></li>
+                        <li><a href="">>> Temrs and Conditions</a></li>
+                        <li><a href="">>> Affiliates</a></li>
+                    </ul>
+
+                </div>
+                <div class="col col-right">
+                    <a href="http://www.instagram.com"><img src="assets/Insta.png"></a>
+                    <ul>
+                        <li><a class="pink" href=""></a></li>
+                        <li><a class="green" href=""></a></li>
+                        <li><a class="black" href=""></a></li>
+                        <li><a class="pink" href=""></a></li>
+                        <li><a class="pink" href=""></a></li>
+                        <li><a class="black" href=""></a></li>
+                        <li><a class="black" href=""></a></li>
+                        <li><a class="green" href=""></a></li>
+                    </ul>
+                    <a class="payment" href=""><img src="assets/payment.png"></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- jquery -->
+        <script src="scripts/jquery-3.3.1.min.js"></script>
+        <script src="scripts/script.js"></script>
+</body>
+</html>
